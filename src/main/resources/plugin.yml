@@ -1,0 +1,8 @@
+name: AGradientName
+version: '${version}'
+main: com.awexer.agradientname.AGradientName
+api-version: '1.16'
+depend:
+  - "PlaceholderAPI"
+commands:
+  agradientname: {}

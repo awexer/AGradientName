@@ -1,0 +1,13 @@
+data-type: "SQLite" # MySql/SQLite/yaml
+mysql: # mysql settings
+  host: "localhost"
+  port: "3306"
+  database: "ColorData"
+  user: "root"
+  password: "1234"
+messages: # Messages
+  no-perm: "&4You don't have permission to execute this!"
+  usage: "&6Invalid usage! Try /%cmd% <name> <color1> <color2>"
+  invalid-color: "&4Only HEX colors are supported!"
+  successfully: "&aSuccessfully updated colors for %player%!"
+  offline: "&4Player is currently offline!"
