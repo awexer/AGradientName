@@ -1,7 +1,6 @@
 package com.awexer.agradientname;
 
 import com.awexer.agradientname.commands.CommandListener;
-import com.awexer.agradientname.events.EventListener;
 import com.awexer.agradientname.placeholders.GradientNameExpansion;
 import com.awexer.agradientname.utils.DatabaseUtils;
 import org.bukkit.Bukkit;
@@ -23,7 +22,6 @@ public final class AGradientName extends JavaPlugin {
         saveDefaultConfig();
         instance = this;
         this.dataType = DataType.valueOf(getConfig().getString("data-type", "SQLITE").toUpperCase());
-        Bukkit.getPluginManager().registerEvents(new EventListener(), this);
         Objects.requireNonNull(getCommand("agradientname")).setExecutor(new CommandListener());
         DatabaseUtils.initDatabaseConnections();
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
